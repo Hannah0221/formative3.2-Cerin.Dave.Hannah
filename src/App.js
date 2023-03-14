@@ -6,10 +6,10 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <AppRoutes/>
+        <AppRoutes />
       </div>
     </BrowserRouter>
-  
+
   );
 }
 
