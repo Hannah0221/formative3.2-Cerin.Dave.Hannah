@@ -2,23 +2,36 @@
   box-sizing: border-box;
 }
 
+h3,
+h3,
+h4,
+h5 {
+  padding: 0;
+  margin: 0;
+}
+=======
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 body {
   padding: 0;
   margin: 0;
+  width: 100vw;
+  height: 100vh;
   background-color: #1b1b1b;
   color: #fff;
   font-family: "Montserrat", sans-serif;
 }
 
+
 .app {
+
   display: flex;
   flex-direction: column;
-  max-width: 1000px;
+  max-width: 1024px;
+  min-height: 768px;
   margin: auto;
   height: 100%;
-  min-height: 100vh;
+  background-color: #fffbed;
 }
 
 .inputBox {
@@ -30,6 +43,18 @@ body {
   border-radius: 10px;
   font-size: 18px;
   color: #ff6666;
+
+}
+.planeInputBox {
+  padding: 3px;
+  margin: 3px;
+  display: block;
+  outline: none;
+  width: 150px;
+  border: none;
+  font-size: 18px;
+  color: #ff6666;
+
 }
 
 .appButtonLong {
@@ -60,3 +85,91 @@ button:active {
   color: #fff;
 }
 
+.flexSE {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.flexSA {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flexFS {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.flexColum {
+  flex-direction: column;
+}
+
+.alignTop {
+  align-items: flex-start;
+}
+
+.gap {
+  gap: 20px;
+}
+
+.paddingLeftSmall {
+  padding-left: 10px;
+}
+.paddingTopSmall {
+  padding-top: 10px;
+}
+.paddingTop {
+  padding-top: 20px;
+}
+.paddingSmall {
+  padding: 20px;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.loginElements {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.listItemPanel {
+  width: 300px;
+  height: 100%;
+  background-color: #ffffff;
+  position: relative;
+  color: #ff6666;
+}
+.close {
+  width: 30px;
+  height: auto;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.searchItems {
+  width: 100%;
+  height: auto;
+}
+
+.icons {
+  width: 35px;
+  height: 35px;
+}
+
+.listItems {
+}
+
+.listItems:active {
+  background-color: #ff0000;
+}
