@@ -6,6 +6,7 @@ import { useEffect } from "react";
 const LandingPage = () => {
     const navigate = useNavigate();
 
+
     localStorage.removeItem("userId");
     localStorage.removeItem("userName");
 
@@ -21,6 +22,8 @@ const LandingPage = () => {
 
 
     return (<div className="flexFS flexColum">
+    return (<div className="landingPageMain">
+
         <h3>Landing page</h3>
 
         <button onClick={() => navigate('/login')} className="appButtonLong">Login</button>
