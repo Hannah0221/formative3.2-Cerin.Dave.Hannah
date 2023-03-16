@@ -20,10 +20,12 @@ const LandingPage = () => {
 
 
 
-    return (<div className="flexFS flexColum">
-        <h3>Landing page</h3>
+    return (<div className="landingLoginPage flexFS flexColum">
+        <div>
+            <button onClick={() => navigate('/login')} className="landingButton">SIGN UP</button>
+            <button onClick={() => navigate('/login')} className="landingButton">LOG IN</button>
 
-        <button onClick={() => navigate('/login')} className="appButtonLong">Login</button>
+        </div>
     </div>);
 
 };

@@ -30,6 +30,8 @@ const Login = () => {
       console.log("user found");
       localStorage.setItem("userId", result.userId);
       localStorage.setItem("userName", result.userName);
+      localStorage.setItem("img_url", result.img_url);
+      console.log(result.img_url);
       navigate("/dashboard");
     } else {
       console.log("No User found");
@@ -40,9 +42,9 @@ const Login = () => {
   };
 
   return (
-    <div className="wrapper">
-      <div className=" loginElements flexSE flexColum paddingLeftSmall">
-        <h3>Login</h3>
+
+    <div className=" landingLoginPage flexSE flexColum paddingLeftSmall blackBG">
+      <div>
         <input
           className="inputBox"
           type="text"
@@ -63,7 +65,9 @@ const Login = () => {
           onClick={clickHandlerLogin}
         > Login </button>
       </div>
+
     </div>
+
 
   );
 };

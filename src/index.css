@@ -13,8 +13,6 @@ h5 {
 body {
   padding: 0;
   margin: 0;
-  width: 100vw;
-  height: 100vh;
   background-color: #1b1b1b;
   color: #fff;
 }
@@ -50,11 +48,44 @@ body {
   color: #ff6666;
 }
 
+.inputBoxSmall {
+  padding: 3px;
+  margin: 3px;
+  display: block;
+  outline: none;
+  width: 150px;
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  color: #ff6666;
+}
+input::-webkit-input-placeholder {
+  color: #ff6666;
+}
+input:-moz-placeholder {
+  color: #ff6666;
+}
+input:-ms-input-placeholder {
+  color: #ff6666;
+}
+
 .appButtonLong {
   padding: 10px;
   margin: 20px;
   width: 300px;
   outline: none;
+  border: 1px solid #ff6666;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.logoutButton {
+  padding: 3px;
+  margin: 20px;
+  width: 100px;
+  outline: none;
+  background: none;
   border: 1px solid #ff6666;
   border-radius: 10px;
   font-size: 18px;
@@ -77,12 +108,26 @@ button:active {
   background-color: #ff6666;
   color: #fff;
 }
+/* Catergory slect compobox */
+
+/* Catergory slect compobox END */
+
+.textBlack {
+  color: #000000;
+}
 
 .flexSE {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.flexSB {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .flexSA {
@@ -97,6 +142,12 @@ button:active {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+}
+.flexFE {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
 }
 .flexColum {
   flex-direction: column;
@@ -123,18 +174,59 @@ button:active {
   padding: 20px;
 }
 
+.paddingBtmSmall {
+  padding-bottom: 10px;
+}
+
+.paddingBtm {
+  padding-bottom: 20px;
+}
+.paddingInlineSmall {
+  padding-inline: 15px;
+}
+.paddingInline {
+  padding-inline: 35px;
+}
 .wrapper {
   width: 100%;
   height: 100%;
   position: relative;
 }
 
+/* Landing & login page */
+
+/* Landing & login page END */
+
 .loginElements {
   position: absolute;
+  width: 300px;
+  height: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* Dashboard  */
+/* Dashbaord End */
+
+/* purchase group panel */
+
+/* Purcahse list Panel */
+
+.purchaseListPanel {
+  width: 100%;
+  height: 100%;
+  color: #ff6666;
+}
+
+.purchaseList {
+  width: 100%;
+  height: 10vh;
+  border-bottom: 1px dashed #ff6666;
+  color: #ff6666;
+}
+
+/* List item panel */
 
 .listItemPanel {
   width: 300px;
@@ -159,10 +251,18 @@ button:active {
   width: 35px;
   height: 35px;
 }
-
-.listItems {
+.iconsSmall {
+  width: 25px;
+  height: auto;
 }
 
-.listItems:active {
-  background-color: #ff0000;
+.iconEdit {
+  width: 30px;
+  height: auto;
+}
+.itemList {
+  width: 100%;
+  height: 600px;
+
+  overflow-y: scroll;
 }
