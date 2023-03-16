@@ -21,14 +21,14 @@ const ListItemPanel = (props) => {
 
 
     const items = listItemArray.map((item) => {
-        return < ListItems name={item.name} />
+        return < ListItems key={item.item_id} name={item.name} />
     });
 
 
     return (
         <div className="listItemPanel flexFS flexColum alignTop paddingSmall">
             <img className="close" src={require('../icons/Icon awesome-window-close.png')} alt="Close Icon" />
-            <div className="searchItems flexFS paddingTopSmall gap">
+            <div className="searchItems flexFS  gap  paddingBtmSmall">
                 <input
                     className="planeInputBox"
                     type="text"
@@ -38,8 +38,11 @@ const ListItemPanel = (props) => {
                 />
                 <img className='icons' src={require('../icons/Icon awesome-search.png')} alt="Search Icon" />
             </div>
-            <h5>Search your shopping list</h5>
-            {items}
+            <h5 className="textBlack paddingBtmSmall">Search your shopping list</h5>
+            <div className="itemList flexFS flexColum alignTop paddingTopSmall">
+                {items}
+            </div>
+
         </div>
     )
 }
