@@ -6,6 +6,7 @@ import { useEffect } from "react";
 const LandingPage = () => {
     const navigate = useNavigate();
 
+
     localStorage.removeItem("userId");
     localStorage.removeItem("userName");
 
@@ -17,6 +18,7 @@ const LandingPage = () => {
     //         localStorage.removeItem("userName");
     //     }
     // }, []);
+
 
 
 
