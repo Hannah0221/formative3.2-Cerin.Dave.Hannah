@@ -109,7 +109,25 @@ button:active {
   color: #fff;
 }
 /* Catergory slect compobox */
+select.dropdown {
+  width: 200px;
+  height: 40px;
+  background-color: #fdf0c8;
+  border: none;
+  border-radius: 10px;
+  padding: 0px 20px;
+  color: #ff0000;
+}
 
+select.dropdown option {
+  width: 100%;
+  height: 100%;
+  background-color: #fdf0c8;
+  border: none;
+  border-radius: 10px;
+  color: #ff0000;
+  padding: 12px 20px;
+}
 /* Catergory slect compobox END */
 
 .textBlack {
@@ -194,7 +212,34 @@ button:active {
 }
 
 /* Landing & login page */
+.landingLoginPage {
+  width: 100%;
+  height: 768px;
+  background: #ff6666;
+  background-image: url(./icons/bg.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.landingLoginPage div {
+  position: absolute;
+  right: 123px;
+  top: 123px;
+  padding-top: 10px;
+}
 
+.landingButton {
+  padding: 2px;
+  margin: 15px;
+  width: 100px;
+  outline: none;
+  border: none;
+  background-color: #333366;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
 /* Landing & login page END */
 
 .loginElements {
@@ -207,10 +252,76 @@ button:active {
 }
 
 /* Dashboard  */
+.hide {
+  display: none;
+}
+
+.dashboardLeftPanel {
+  width: 30%;
+  height: 100vh;
+  background-color: #fdf0c8;
+}
+.bashboardRightPanel {
+  width: 70%;
+  height: 100vh;
+}
+.bashboardHeaderPanel {
+  width: 100%;
+  height: 15%;
+  background-color: #ffe6e6;
+  color: #ff6666;
+}
+.dashboardBody {
+  width: 100%;
+  height: 85%;
+  background-color: #fffbed;
+}
+.logoBlock {
+  width: 85%;
+  height: 6vh;
+  padding-top: 25vh;
+  border-bottom: 1px dashed #ff6666;
+  position: relative;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  transform: translate(-50%, -50%);
+}
+
+.profileImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  margin-right: 10px;
+}
 /* Dashbaord End */
 
 /* purchase group panel */
-
+.purcahseGroupPanel {
+  width: 85%;
+  height: 78vh;
+  color: #ff6666;
+}
+.purchaseGroupNew {
+  width: 100%;
+  height: 10vh;
+  border-bottom: 1px dashed #ff6666;
+  position: relative;
+}
+.purchaseGroupNewBase {
+  width: 80%;
+  height: 100%;
+  cursor: pointer;
+}
+.purcchaseGroupNewField {
+  width: 100%;
+  height: 10vh;
+}
 /* Purcahse list Panel */
 
 .purchaseListPanel {
